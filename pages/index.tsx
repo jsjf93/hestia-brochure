@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Jumbotron } from 'react-bootstrap';
+import Button from '../components/form-components/button/button';
 import Layout from '../components/layout';
+import Products from '../components/page-components/home/products/products';
 
 export default function Home() {
   let mediaMatch: MediaQueryList;
@@ -22,8 +24,15 @@ export default function Home() {
       <Jumbotron style={styles.jumbotron(matches) as React.CSSProperties}>
         <h1>Hero text here</h1>
         <h2>Text here</h2>
-        <button>Call to action</button>
+        <Button
+          variant='primary'
+          color='white'
+          text='CALL TO ACTION'
+          onClick={() => undefined}
+        />
       </Jumbotron>
+
+      <Products />
     </Layout>
   );
 }
@@ -40,6 +49,6 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
-    color: 'white'
+    color: 'white',
   })
 };
