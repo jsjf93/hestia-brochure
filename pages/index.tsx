@@ -1,12 +1,45 @@
+import { useEffect, useState } from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import Layout from '../components/layout';
 
 export default function Home() {
+  let mediaMatch: MediaQueryList;
+
+  if (typeof window !== 'undefined') {
+    mediaMatch = window.matchMedia('(max-width: 768px)');
+  }
+  const [matches, setMatches] = useState(!!mediaMatch?.matches);
+
+  useEffect(() => {
+    const handler = event => setMatches(event.matches);
+    mediaMatch.addEventListener('change', handler);
+
+    return () => mediaMatch.removeEventListener('change', handler);
+  }, []);
+
   return (
     <Layout>
-      <div style={{ background: `url('./hero-cake.jpg')`, backgroundSize: 'cover', height: 500, width: '100%' }}>
-      </div>
+      <Jumbotron style={styles.jumbotron(matches) as React.CSSProperties}>
+        <h1>Hero text here</h1>
+        <h2>Text here</h2>
+        <button>Call to action</button>
+      </Jumbotron>
     </Layout>
   );
 }
 
+const styles = {
+  jumbotron: (smallWindow: boolean) => ({
+    background: `url('./hero-cake.jpg')`,
+    backgroundSize: 'cover',
+    height: smallWindow ? 300 : 500,
+    width: '100%',
+    backgroundPosition: smallWindow ? '0% 20%' : '20% 10%',
+    borderRadius: 0,
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    color: 'white'
+  })
+};
