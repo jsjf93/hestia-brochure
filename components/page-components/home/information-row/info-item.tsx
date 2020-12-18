@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 type Props = {
   image: string;
   title: string;
@@ -9,7 +7,7 @@ type Props = {
 export default function InfoItem({ image, title, text}: Props) {
   return (
     <div style={styles.infoItem}>
-      <Image src={image} alt={'Cake information icon'} width={85} height={100} layout={'fixed'} />
+      <img src={image} alt={'Cake information icon'} width={85} height={100} />
       <h3 style={styles.title}>{title}</h3>
       <p style={styles.text}>{text}</p>
     </div> 

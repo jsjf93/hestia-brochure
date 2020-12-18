@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Card } from 'react-bootstrap';
 
 type Props = {
@@ -10,7 +9,7 @@ type Props = {
 export default function Product(props: Props) {
   return (
     <Card style={styles.card}>
-      <Image src={props.image} alt={props.text} height={480} width={360} layout="responsive" />
+      <img src={props.image} alt={props.text} style={styles.img} />
       <Card.Title style={styles.title}>{props.text}</Card.Title>
       <hr style={styles.hr}/>
       <Card.Text style={styles.text}>{props.cost}</Card.Text>
@@ -38,5 +37,10 @@ const styles = {
     fontSize: 18,
     fontWeight: 'bold',
     margin: '20px 0'
-  } as React.CSSProperties
+  } as React.CSSProperties,
+  img: {
+    width: '100%',
+    maxHeight: '480px',
+    height: 'auto'
+  } as React.CSSProperties,
 };

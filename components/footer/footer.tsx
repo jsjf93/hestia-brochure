@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function Footer() {
@@ -13,7 +12,7 @@ export default function Footer() {
             <p style={styles.details}>DETAILS 03</p>
           </Col>
           <Col>
-            <Image src={'/logo.PNG'} alt={'Hestia Logo'} width={80} height={115} layout="fixed" />
+            <img src={'/logo.PNG'} alt={'Hestia Logo'} width={80} height={115} />
           </Col>
           <Col>
             <h3 style={styles.title}>About</h3>
