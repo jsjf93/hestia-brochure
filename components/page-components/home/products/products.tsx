@@ -33,6 +33,6 @@ const styles = {
     width: '100%',
     textAlign: 'center',
     fontSize: '32px',
-    padding: "20px 0"
+    padding: '20px 0 40px 0'
   } as React.CSSProperties
 };

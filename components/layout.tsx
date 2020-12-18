@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import Head from "next/head";
 import Navbar from "./navbar/navbar";
+import Footer from "./footer/footer";
 
 function Layout({ children }) {
   return (
@@ -16,6 +17,8 @@ function Layout({ children }) {
       <Navbar />
 
       {children}
+
+      <Footer />
     </>
   );
 }

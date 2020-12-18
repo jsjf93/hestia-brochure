@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import Button from '../components/form-components/button/button';
 import Layout from '../components/layout';
+import About from '../components/page-components/home/about-row/about';
+import Information from '../components/page-components/home/information-row/information';
 import Products from '../components/page-components/home/products/products';
 
 export default function Home() {
@@ -33,6 +35,8 @@ export default function Home() {
       </Jumbotron>
 
       <Products />
+      <About />
+      <Information />
     </Layout>
   );
 }
