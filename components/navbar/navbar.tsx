@@ -6,7 +6,7 @@ export default function Navbar () {
   return (
     <Nav className={styles.navbar} expand="md">
       <Link href="/">
-        <a><img src="/navbar-logo.PNG" alt="Logo" width={245} height={80} /></a>
+        <a><img src="/navbar-logo.PNG" alt="Logo" className={styles.logo} /></a>
       </Link>
       <Nav.Toggle aria-controls="navbar-nav" />
 
@@ -24,4 +24,3 @@ export default function Navbar () {
     </Nav>
   );
 };
-

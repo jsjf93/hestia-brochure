@@ -33,7 +33,7 @@ export default function About() {
             />
           </Col>
           <Col xs={12} lg={5} style={styles.imageColumn(matches)}>
-            <img src='/cakes/saltedcaramel.png' alt='Rebecca' height={360} width={240} />
+            <img src='/cakes/saltedcaramel.png' alt='Rebecca' style={styles.img} />
           </Col>
         </Row>
       </Container>
@@ -60,4 +60,10 @@ const styles = {
     margin: smallWindow ? '30px 0' : '30px 40px',
     fontFamily: 'Work Sans, sans-serif',
   }) as React.CSSProperties,
+  img: {
+    width: '100%',
+    maxWidth: '240px',
+    maxHeight: '360px',
+    height: 'auto'
+  } as React.CSSProperties,
 }
