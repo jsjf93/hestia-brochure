@@ -5,21 +5,11 @@ import Layout from '../components/layout';
 import About from '../components/page-components/home/about-row/about';
 import Information from '../components/page-components/home/information-row/information';
 import Products from '../components/page-components/home/products/products';
+import { useWindowSize } from '../hooks/useWindowSize';
 
 export default function Home() {
-  let mediaMatch: MediaQueryList;
-
-  if (typeof window !== 'undefined') {
-    mediaMatch = window.matchMedia('(max-width: 768px)');
-  }
-  const [matches, setMatches] = useState(!!mediaMatch?.matches);
-
-  useEffect(() => {
-    const handler = event => setMatches(event.matches);
-    mediaMatch.addEventListener('change', handler);
-
-    return () => mediaMatch.removeEventListener('change', handler);
-  }, []);
+  const size = useWindowSize();
+  const matches = size?.width <= 768;
 
   return (
     <Layout>

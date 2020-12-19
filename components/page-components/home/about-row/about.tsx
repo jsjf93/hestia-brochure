@@ -1,22 +1,10 @@
-import { useEffect, useState } from 'react';
-
 import { Col, Container, Row } from "react-bootstrap";
+import { useWindowSize } from '../../../../hooks/useWindowSize';
 import Button from '../../../form-components/button/button';
 
 export default function About() {
-  let mediaMatch: MediaQueryList;
-
-  if (typeof window !== 'undefined') {
-    mediaMatch = window.matchMedia('(max-width: 768px)');
-  }
-  const [matches, setMatches] = useState(!!mediaMatch?.matches);
-
-  useEffect(() => {
-    const handler = event => setMatches(event.matches);
-    mediaMatch.addEventListener('change', handler);
-
-    return () => mediaMatch.removeEventListener('change', handler);
-  }, []);
+  const size = useWindowSize();
+  const matches = size?.width <= 768;
   
   return (
     <div style={styles.aboutContainer}>

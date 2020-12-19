@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Navbar as Nav, Nav as NavComponent } from 'react-bootstrap';
+import UseAnimations from 'react-useanimations';
+import menu3 from 'react-useanimations/lib/menu3'
 import styles from './navbar.module.scss';
 
 export default function Navbar () {
@@ -8,7 +10,15 @@ export default function Navbar () {
       <Link href="/">
         <a><img src="/navbar-logo.PNG" alt="Logo" className={styles.logo} /></a>
       </Link>
-      <Nav.Toggle aria-controls="navbar-nav" />
+      <Nav.Toggle className={styles.navbarToggle} aria-controls="navbar-nav">
+        <UseAnimations
+          aria-controls="navbar-nav" 
+          aria-label="Toggle navigation" 
+          animation={menu3} 
+          size={40} 
+          speed={1.5}
+        />
+      </Nav.Toggle>
 
       <Nav.Collapse id="navbar-nav" className={styles.navbar__itemContainer}>
         <Link href="#">

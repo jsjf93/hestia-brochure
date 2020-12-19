@@ -1,5 +1,7 @@
+@import '../../styles/settings/colours';
+
 .navbar {
-  height: 150px;
+  margin: 15px 0;
   width: 100%;
   padding: 0 100px;
   font-family: 'Work Sans', sans-serif;
@@ -17,9 +19,21 @@
   height: auto;
 }
 
+.navbarToggle {
+  border: none;
+
+  &:focus {
+    outline: 1px solid $camel;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 0 5%;
+  }
+
+  .navbar__itemContainer {
+    text-align: center;
   }
 }
 
