@@ -1,5 +1,5 @@
 ---
-name: "Brown Butter Sponge"
-price: "£4.00"
-image: "/images/brownbuttersponge.png"
+name: Brown Butter Sponge Cake
+price: £5.00
+image: /images/brownbuttersponge.png
 ---
