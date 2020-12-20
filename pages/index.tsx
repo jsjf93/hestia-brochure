@@ -1,13 +1,19 @@
-import { useEffect, useState } from 'react';
+import { GetStaticProps } from 'next';
 import { Jumbotron } from 'react-bootstrap';
+import { ProductData } from '../common/interfaces';
 import Button from '../components/form-components/button/button';
 import Layout from '../components/layout';
 import About from '../components/page-components/home/about-row/about';
 import Information from '../components/page-components/home/information-row/information';
 import Products from '../components/page-components/home/products/products';
 import { useWindowSize } from '../hooks/useWindowSize';
+import { getProductsData } from '../lib/products';
 
-export default function Home() {
+type Props = {
+  allProductsData: ProductData[];
+}
+
+export default function Home({ allProductsData }: Props) {
   const size = useWindowSize();
   const matches = size?.width <= 768;
 
@@ -24,11 +30,21 @@ export default function Home() {
         />
       </Jumbotron>
 
-      <Products />
+      <Products allProductsData={allProductsData}/>
       <About />
       <Information />
     </Layout>
   );
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allProductsData = getProductsData();
+
+  return {
+    props: {
+      allProductsData
+    }
+  };
 }
 
 const styles = {

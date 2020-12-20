@@ -21,7 +21,7 @@ export default function About() {
             />
           </Col>
           <Col xs={12} lg={5} style={styles.imageColumn(matches)}>
-            <img src='/cakes/saltedcaramel.png' alt='Rebecca' style={styles.img} />
+            <img src='/images/saltedcaramel.png' alt='Rebecca' style={styles.img} />
           </Col>
         </Row>
       </Container>
