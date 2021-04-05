@@ -1,27 +1,41 @@
-import Link from "next/link";
 import { Container } from "react-bootstrap";
 import { ProductData } from "../../../../common/interfaces";
 import Product from '../product/product';
 
-type Props = {
-  allProductsData: ProductData[];
-}
+const categories: { image: string, text: string }[] = [
+  {
+    image: '/images/brownbuttersponge.png',
+    text: 'Celebration Cakes'
+  },
+  {
+    image: '/images/chocolateguinness.png',
+    text: 'Patisserie Boxes'
+  },
+  {
+    image: '/images/cinnamonbun.png',
+    text: 'Afternoon Tea Boxes'
+  },
+  {
+    image: '/images/lemonmeringue.png',
+    text: 'S\'mores Kits'
+  },
+  {
+    image: '/images/saltedcaramel.png',
+    text: 'Tea Cakes'
+  },
+  {
+    image: '/images/vanillasponge.png',
+    text: 'Small Treats'
+  },
+];
 
-export default function Products(props: Props) {
+export default function Products() {
   return (
-    <>
       <Container style={styles.productsContainer}>
-        {props.allProductsData.map(cake => (
-          <Product key={cake.id} image={cake.image} text={cake.name} cost={cake.price} />
+        {categories.map(item => (
+          <Product key={item.image} image={item.image} text={item.text} />
         ))}
       </Container>
-
-      <div style={styles.buttonContainer}>
-        <Link href="/">
-          <a>More...</a>
-        </Link>
-      </div>
-    </>
   );
 }
 

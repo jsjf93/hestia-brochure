@@ -13,24 +13,15 @@ type Props = {
   allProductsData: ProductData[];
 }
 
-export default function Home({ allProductsData }: Props) {
+export default function Home() {
   const size = useWindowSize();
   const matches = size?.width <= 768;
 
   return (
     <Layout>
-      <Jumbotron style={styles.jumbotron(matches) as React.CSSProperties}>
-        <h1>Hero text here</h1>
-        <h2>Text here</h2>
-        <Button
-          variant='primary'
-          color='white'
-          text='CALL TO ACTION'
-          onClick={() => undefined}
-        />
-      </Jumbotron>
+      <Jumbotron style={styles.jumbotron(matches) as React.CSSProperties} />
 
-      <Products allProductsData={allProductsData}/>
+      <Products />
       <About />
       <Information />
     </Layout>

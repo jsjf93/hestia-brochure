@@ -1,14 +1,12 @@
 type Props = {
   image: string;
-  title: string;
   text: string;
 }
 
-export default function InfoItem({ image, title, text}: Props) {
+export default function InfoItem({ image, text}: Props) {
   return (
     <div style={styles.infoItem}>
-      <img src={image} alt={'Cake information icon'} width={85} height={100} />
-      <h3 style={styles.title}>{title}</h3>
+      <img src={image} alt={'Cake information icon'} width={170} height={200} />
       <p style={styles.text}>{text}</p>
     </div> 
   )
@@ -21,11 +19,8 @@ const styles = {
     alignItems: 'center',
     textAlign: 'center'
   } as React.CSSProperties,
-  title: {
-    margin: '40px 0 0 0'
-  } as React.CSSProperties,
   text: {
-    margin: '40px 0',
+    margin: '10px 0',
     fontFamily: 'Work Sans, sans-serif'
   } as React.CSSProperties,
 }

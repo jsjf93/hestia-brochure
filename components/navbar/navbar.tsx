@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { Navbar as Nav, Nav as NavComponent } from 'react-bootstrap';
+import { Navbar as Nav } from 'react-bootstrap';
 import UseAnimations from 'react-useanimations';
 import menu3 from 'react-useanimations/lib/menu3'
 import styles from './navbar.module.scss';
 
 export default function Navbar () {
   return (
-    <Nav className={styles.navbar} expand="md">
+    <Nav className={styles.navbar} expand="lg">
       <Link href="/">
         <a><img src="/navbar-logo.PNG" alt="Logo" className={styles.logo} /></a>
       </Link>
@@ -21,14 +21,26 @@ export default function Navbar () {
       </Nav.Toggle>
 
       <Nav.Collapse id="navbar-nav" className={styles.navbar__itemContainer}>
-        <Link href="#">
-          <NavComponent.Link>LINK 1</NavComponent.Link>
+        <Link href="/celebration-cakes">
+          <a className={styles.navbar__link}>Celebration Cakes</a>
         </Link>
-        <Link href="#">
-          <NavComponent.Link>LINK 2</NavComponent.Link>
+        <Link href="/patisserie-boxes">
+          <a className={styles.navbar__link}>Patisserie Boxes</a>
         </Link>
-        <Link href="#">
-          <NavComponent.Link>LINK 3</NavComponent.Link>
+        <Link href="/afternoon-tea">
+          <a className={styles.navbar__link}>Afternoon Tea</a>
+        </Link>
+        <Link href="/smores-kits">
+          <a className={styles.navbar__link}>S'mores Kits</a>
+        </Link>
+        <Link href="/tea-cakes">
+          <a className={styles.navbar__link}>Tea Cakes</a>
+        </Link>
+        <Link href="/small-treats">
+          <a className={styles.navbar__link}>Small Treats</a>
+        </Link>
+        <Link href="/contact">
+          <a className={styles.navbar__link}>Contact</a>
         </Link>
       </Nav.Collapse>
     </Nav>

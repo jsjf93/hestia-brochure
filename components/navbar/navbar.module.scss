@@ -6,6 +6,17 @@
   padding: 0 100px;
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
+
+  &__link {
+    margin: 0 10px;
+    color: $davys-grey;
+    text-align: center;
+    
+    &:hover {
+      text-decoration: none;
+      color: $jet;
+    }
+  }
 }
 
 .navbar__itemContainer {
@@ -14,16 +25,23 @@
 
 .logo {
   width: 100%;
-  max-width: 245px;
+  max-width: 220px;
   max-height: 80px;
   height: auto;
 }
 
 .navbarToggle {
   border: none;
-
+  padding: 5px;
   &:focus {
     outline: 1px solid $camel;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar__itemContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
