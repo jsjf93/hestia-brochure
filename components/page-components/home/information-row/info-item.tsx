@@ -1,26 +1,29 @@
+import styled from "styled-components"
+
 type Props = {
   image: string;
+  title: string;
   text: string;
 }
 
-export default function InfoItem({ image, text}: Props) {
-  return (
-    <div style={styles.infoItem}>
-      <img src={image} alt={'Cake information icon'} width={170} height={200} />
-      <p style={styles.text}>{text}</p>
-    </div> 
-  )
-}
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`;
 
-const styles = {
-  infoItem: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center'
-  } as React.CSSProperties,
-  text: {
-    margin: '10px 0',
-    fontFamily: 'Work Sans, sans-serif'
-  } as React.CSSProperties,
-}
+const Paragraph = styled.p`
+  margin: 10px 0;
+  font-family: 'Work Sans', sans-serif;
+`;
+
+export default function InfoItem({ image, title, text }: Props) {
+  return (
+    <Wrapper>
+      <img src={image} alt={'Cake information icon'} width={170} height={200} />
+      <h4>{title}</h4>
+      <Paragraph>{text}</Paragraph>
+    </Wrapper> 
+  )
+};

@@ -9,13 +9,13 @@ export default function Information() {
       </Row>
       <Row className="justify-content-center">
         <Col xs={10} md={2} lg={3} style={styles.col}>
-          <InfoItem image={'images/cakeicons/Lemon.png'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
+          <InfoItem image={'images/cakeicons/Lemon.png'} title={'Title 1'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
         </Col>
         <Col xs={10} md={2} lg={3} style={styles.col}>
-          <InfoItem image={'images/cakeicons/DarkChocolateCherry.png'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
+          <InfoItem image={'images/cakeicons/DarkChocolateCherry.png'} title={'Title 2'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
         </Col>
         <Col xs={10} md={2} lg={3} style={styles.col}>
-          <InfoItem image={'images/cakeicons/StickyToffee.png'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
+          <InfoItem image={'images/cakeicons/StickyToffee.png'} title={'Title 3'} text={'Lorem ipsum sit amet, consectetur adipscing elit.'} />
         </Col>
       </Row>
     </Container>
