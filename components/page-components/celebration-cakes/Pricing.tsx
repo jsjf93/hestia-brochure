@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import { Paragraph, SubTitle } from "../shared/SharedComponents";
+import { Anchor, Paragraph, SubTitle } from "../shared/SharedComponents";
 
 const StyledContainer = styled(Container)`
   padding: 20px 20px;
@@ -8,10 +8,6 @@ const StyledContainer = styled(Container)`
 
 const List = styled.ul`
   font-family: 'Work Sans', sans-serif;
-`;
-
-const Anchor = styled.a`
-  font-weight: bold;
 `;
 
 export const Pricing = () => (

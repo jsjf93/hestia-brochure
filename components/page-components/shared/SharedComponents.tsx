@@ -26,3 +26,7 @@ export const SubTitle = styled.h2`
   text-align: center;
   width: 100%;
 `;
+
+export const Anchor = styled.a`
+  font-weight: bold;
+`;
