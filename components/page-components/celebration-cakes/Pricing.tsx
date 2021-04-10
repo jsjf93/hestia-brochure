@@ -1,16 +1,9 @@
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import { Paragraph, SubTitle } from "../shared/SharedComponents";
 
 const StyledContainer = styled(Container)`
   padding: 20px 20px;
-`;
-
-const Title = styled.h2`
-  text-align: center;
-`;
-
-const Paragraph = styled.p`
-  font-family: 'Work Sans', sans-serif;
 `;
 
 const List = styled.ul`
@@ -23,7 +16,7 @@ const Anchor = styled.a`
 
 export const Pricing = () => (
   <StyledContainer>
-    <Title>Pricing</Title>
+    <SubTitle>Pricing</SubTitle>
     
     <Paragraph>
       Sizes and approximate portions:
