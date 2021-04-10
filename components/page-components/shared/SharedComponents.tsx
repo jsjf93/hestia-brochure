@@ -24,4 +24,5 @@ export const AlabasterWrapper = styled(DefaultWrapper)`
 
 export const SubTitle = styled.h2`
   text-align: center;
+  width: 100%;
 `;
