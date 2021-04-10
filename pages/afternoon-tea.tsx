@@ -4,8 +4,6 @@ import Layout from '../components/layout';
 import { MonthlySelection } from '../components/page-components/shared/MonthlySelection';
 import { DefaultWrapper, Paragraph, TitleWrapper } from '../components/page-components/shared/SharedComponents';
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 const TextWrapper = styled(DefaultWrapper)`
   padding: 40px 20px;
   text-align: center;
@@ -13,15 +11,13 @@ const TextWrapper = styled(DefaultWrapper)`
 
 
 const AfternoonTea = () => {
-  const month = months[new Date().getMonth()];
-
   return (
     <Layout>
       <TitleWrapper>
         <h1>Afternoon Tea</h1>
       </TitleWrapper>
 
-      <MonthlySelection title={`${month} Selection`} image="images/afternoon-tea.JPG" />
+      <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" />
 
       <TextWrapper>
         <h3>Afternoon Tea Box feeds two people</h3>

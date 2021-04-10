@@ -16,7 +16,7 @@ const Patisserie = () => {
         <h1>Patisserie</h1>
       </TitleWrapper>
 
-      <MonthlySelection title="...Selection Box" image="" />
+      <MonthlySelection title="Selection Box" image="images/petisserie.jpg" />
 
       <TextWrapper>
         <Paragraph>Each box contains two of each dessert.</Paragraph>

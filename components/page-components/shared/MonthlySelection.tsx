@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { DefaultWrapper, SubTitle } from "./SharedComponents";
 
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 type Props = {
   title: string;
   image: string;
@@ -11,6 +13,7 @@ const Wrapper = styled(DefaultWrapper)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 0;
 `;
 
 const Image = styled.img`
@@ -21,15 +24,19 @@ const Image = styled.img`
     width: 50%;
   };
 
-  @media (max-width: 425px) {
-    width: 90%;
+  @media (max-width: 500px) {
+    width: 100%;
   };
 `;
 
-export const MonthlySelection = ({ title, image }: Props) => (
-  <Wrapper>
-    <SubTitle>{title}</SubTitle>
+export const MonthlySelection = ({ title, image }: Props) => {
+  const month = months[new Date().getMonth()];
 
-    <Image src={image} alt={title} />
-  </Wrapper>
-);
+  return (
+    <Wrapper>
+      <SubTitle>{`${month} ${title}`}</SubTitle>
+
+      <Image src={image} alt={`${month} ${title}`} />
+    </Wrapper>
+  );
+};
