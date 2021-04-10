@@ -24,7 +24,7 @@ const TeaCakes = () => {
           <SubTitle>Smaller cakes based on Hestia's signature flavours</SubTitle>
           <CenteredParagraph>6" sponge (10 - 12 slices) from £20</CenteredParagraph>
           <CenteredParagraph>
-            For more elaborate or personalised decoriation please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote
+            For more elaborate or personalised decoration please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote
           </CenteredParagraph>
 
           <Row>
