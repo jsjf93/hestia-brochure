@@ -34,7 +34,7 @@ const SmoresKits = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <h1>S'mores Kits</h1>
+        <h1>S'Mores Kits</h1>
       </TitleWrapper>
       
       <StyledContainer>

@@ -18,7 +18,7 @@ export const Cakes = () => (
       <Row>
         <PaddedCol md={4}>
           <h2>Salted Caramel Hazelnut</h2>
-          <Paragraph>Hazelnut mousseline, milk chocolate mousse, hazelnut dacquoise, salted caramel center</Paragraph>
+          <Paragraph>Hazelnut mousseline, milk chocolate mousse, hazelnut dacquoise, salted caramel centre</Paragraph>
         </PaddedCol>
         <PaddedCol md={4}>
           <h2>Passionfruit Coconut Tart</h2>

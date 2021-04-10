@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
 import { secondary } from "../../../styles/settings/colors";
-import { Paragraph, SubTitle } from "../shared/SharedComponents";
+import { Anchor, Paragraph, SubTitle } from "../shared/SharedComponents";
 
 const Wrapper = styled.div`
   background-color: ${secondary['alabaster']};
@@ -15,6 +15,7 @@ export const Delivery = () => (
       <Paragraph>
         You can choose to collect your cake from my home in Wymondham, Norfolk or choose to have it delivered. Delivery is available throughout Norfolk and Suffolk, subject to a delivery charge.
       </Paragraph>
+      <Paragraph>Please find charges <Anchor href="/contact">here</Anchor></Paragraph>
     </Container>
   </Wrapper>
 );

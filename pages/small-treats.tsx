@@ -21,7 +21,7 @@ const SmallTreats = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <h1>Small Treats</h1>
+        <h1>Cupcakes</h1>
       </TitleWrapper>
 
       <DefaultWrapper>
@@ -38,12 +38,16 @@ const SmallTreats = () => {
             </Col>
           </Row>
 
-          <SubTitle>Cupcakes</SubTitle>
           <CenteredParagraph>6 cupcakes from £20</CenteredParagraph>
           <CenteredParagraph>Based on Hestia's signature cake flavours</CenteredParagraph>
+
+          <br />
+
           <CenteredParagraph>
-            For more elaborate or personalised decoration please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote
+            For more elaborate or personalised decoration please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote.
           </CenteredParagraph>
+
+          <br />
 
           <Row>
             <StyledCol sm={4}>&#9679; Madagascan Vanilla</StyledCol>

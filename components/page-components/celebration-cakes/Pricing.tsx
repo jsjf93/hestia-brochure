@@ -24,7 +24,7 @@ export const Pricing = () => (
     </List>
 
     <Paragraph>
-      All Cakes are individual and prices are determined by size, design and detail.
+      All cakes are individual and prices are determined by size, design and detail.
     </Paragraph>
     <Paragraph>
       Please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote.

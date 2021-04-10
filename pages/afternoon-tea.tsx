@@ -1,14 +1,26 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import Layout from '../components/layout';
+import { BoxInfo } from '../components/page-components/shared/BoxInfo';
 import { MonthlySelection } from '../components/page-components/shared/MonthlySelection';
 import { DefaultWrapper, Paragraph, TitleWrapper } from '../components/page-components/shared/SharedComponents';
 
 const TextWrapper = styled(DefaultWrapper)`
-  padding: 40px 20px;
+  padding: 40px 0px;
   text-align: center;
+
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
+const StyledContainer = styled(Container)`
+  padding-top: 30px;
+
+  @media (max-width: 500px) {
+    padding-bottom: 30px;
+  }
+`;
 
 const AfternoonTea = () => {
   return (
@@ -20,36 +32,35 @@ const AfternoonTea = () => {
       <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" />
 
       <TextWrapper>
-        <h3>Afternoon Tea Box feeds two people</h3>
-
-        <Container>
+        <BoxInfo />
+        <StyledContainer>
           <Row>
             <Col sm={6}>
               <Paragraph>2 x Sour Cherry and Almond Scones</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Banoffee Macarons</Paragraph>
+              <Paragraph>2 x Banana Chocolate Macarons</Paragraph>
             </Col>
             <Col sm={6}>
               <Paragraph>2 x Clotted Cream</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Peanut Butter Stack</Paragraph>
-            </Col>
-            <Col sm={6}>
               <Paragraph>2 x Strawberry Jam</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Lemon Cheesecake with Whipped White Chocolate</Paragraph>
+              <Paragraph>2 x Peanut Butter Blondie, Raspberry Jelly, Chocolate Marshmallow Stack</Paragraph>
+            </Col>
+            <Col sm={6}>
+              <Paragraph>2 x Whipped White Chocolate Ganache and Lemon Curd</Paragraph>
             </Col>
             <Col sm={6}>
               <Paragraph>2 x Clipper English Breakfast Tea Bags</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Rhubard and Custard Financier</Paragraph>
+              <Paragraph>2 x Hibuscus Rhubard and Custard Financier</Paragraph>
             </Col>
           </Row>
-        </Container>
+        </StyledContainer>
       </TextWrapper>
     </Layout>
   );
