@@ -4,28 +4,28 @@ import Product from '../product/product';
 
 const categories: { image: string, text: string }[] = [
   {
-    image: '/images/brownbuttersponge.png',
+    image: '/images/SquareChocolateDrip.jpg',
     text: 'Celebration Cakes'
   },
   {
-    image: '/images/chocolateguinness.png',
+    image: '/images/SquarePat.jpg',
     text: 'Patisserie Boxes'
   },
   {
-    image: '/images/cinnamonbun.png',
+    image: '/images/SquareAT.jpg',
     text: 'Afternoon Tea Boxes'
   },
   {
-    image: '/images/lemonmeringue.png',
+    image: '/images/SquareMallow.jpg',
     text: 'S\'mores Kits'
   },
   {
-    image: '/images/saltedcaramel.png',
+    image: '/images/SquareCarrot.jpg',
     text: 'Tea Cakes'
   },
   {
-    image: '/images/vanillasponge.png',
-    text: 'Small Treats'
+    image: '/images/SquareCupcake.jpg',
+    text: 'Cupcakes'
   },
 ];
 

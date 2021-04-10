@@ -32,7 +32,7 @@ export default function About() {
         <StyledRow noGutters>
           <SubTitle>About Hestia Patisserie</SubTitle>
           <Paragraph smallWindow={smallWindow}>
-            Hestia Patisserie is run by professional chef Rebecca Heath. After attending culinary school and working in high end hotels and restaurants, she moved to Nottingham to work at starred a restaurant, Sat Bains and then onto Copenhagen, Denmark, to work at various Michelin starred restaurants. Upon returning to Norfolk she has concentrated predominantly on patisserie, which has inspired her to establish her own business.
+            Hestia Patisserie is run by professional chef Rebecca Heath. After attending culinary school and working in high end hotels and restaurants in London, she moved to Nottingham to work at starred a restaurant, Sat Bains and then onto Copenhagen, Denmark, to work at various Michelin starred restaurants. Upon returning to Norfolk she has concentrated predominantly on patisserie, which has inspired her to establish her own business.
           </Paragraph>
         </StyledRow>
       </Container>

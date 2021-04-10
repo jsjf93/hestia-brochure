@@ -7,18 +7,16 @@ export default function Footer() {
         <Row noGutters>
           <Col>
             <h3 style={styles.title}>Contact</h3>
-            <p style={styles.details}>DETAILS 01</p>
-            <p style={styles.details}>DETAILS 02</p>
-            <p style={styles.details}>DETAILS 03</p>
+            <p style={styles.details}><a href="/contact">Contact page</a></p>
+            <p style={styles.details}><a href="mailto:info@hestia-patisserie">info@hestia-patisserie</a></p>
           </Col>
           <Col>
             <img src={'/logo.PNG'} alt={'Hestia Logo'} width={80} height={115} />
           </Col>
           <Col>
             <h3 style={styles.title}>About</h3>
-            <p style={styles.details}>DETAILS 01</p>
-            <p style={styles.details}>DETAILS 02</p>
-            <p style={styles.details}>DETAILS 03</p>
+            <p style={styles.details}>Graphics and branding by Studio Waves</p>
+            <p style={styles.details}>Website by Joshua Foster</p>
           </Col>
         </Row>
       </Container>
