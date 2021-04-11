@@ -23,11 +23,11 @@ export default function Home() {
 
 const styles = {
   jumbotron: (smallWindow: boolean) => ({
-    background: `url('./images/FloralMeadowDesignCropped.jpg')`,
+    background: `url('./images/hero-domes.jpg')`,
     backgroundSize: 'cover',
-    height: smallWindow ? 300 : 500,
+    height: smallWindow ? 250 : 450,
     width: '100%',
-    backgroundPosition: smallWindow ? '40% 40%' : '0% 0%',
+    backgroundPosition: smallWindow ? '40% 40%' : '40% 40%',
     borderRadius: 0,
     display: 'flex',
     justifyContent: 'center',

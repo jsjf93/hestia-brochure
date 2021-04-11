@@ -35,13 +35,14 @@ const Contact = () => {
             <h3>To order</h3>
             <Paragraph>Email: <Anchor href="mailto:info@hestia-patisserie">info@hestia-patisserie</Anchor></Paragraph>
             <Paragraph>
-              Include information about products you are interesting in ordering from the following pages;
-              <Anchor href="/celebration-cakes"> Celebration Cakes</Anchor>,
-              <Anchor href="/patisserie-boxes"> Patisserie Boxes</Anchor>,
-              <Anchor href="/afternoon-tea"> Afternoon Tea</Anchor>,
-              <Anchor href="/smores-kits"> S'mores Kits</Anchor>,
-              <Anchor href="/tea-cakes"> Tea Cakes</Anchor> and
-              <Anchor href="/celebration-cakes"> Small Treats</Anchor>.
+              Include information about products you are interesting in ordering from the following pages;&nbsp;
+              <Anchor href="/celebration-cakes">Celebration Cakes</Anchor>,&nbsp;
+              <Anchor href="/patisserie-boxes">Patisserie Boxes</Anchor>,&nbsp;
+              <Anchor href="/afternoon-tea">Afternoon Tea</Anchor>,&nbsp;
+              <Anchor href="/smores-kits">S'mores Kits</Anchor>,&nbsp;
+              <Anchor href="/tea-cakes">Tea Cakes</Anchor> and&nbsp;
+              <Anchor href="/small-treats">Cupcakes</Anchor>,
+              or even a bespoke dessert.
             </Paragraph>
             <br />
             <BoldParagraph>Please remember to include any information about allergy or dietary requirements (e.g. dairy, gluten, nuts).</BoldParagraph>
@@ -55,7 +56,7 @@ const Contact = () => {
             <Paragraph>Middle Circle (Central Norwich, Taverham, Banham) = £5</Paragraph>
             <Paragraph>Outer Circle (Acle, Swaffham, Thetford, Diss) = £10</Paragraph>
             <BoldParagraph>Delivery for special, large orders further away can be quoted for</BoldParagraph>
-            <Image src="images/DeliveryMap.png" alt="Delivery map" />
+            <Image src="images/DeliveryMapSqr.png" alt="Delivery map" />
           </StyledCol>
         </Row>
       </StyledContainer>

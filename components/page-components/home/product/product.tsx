@@ -19,11 +19,11 @@ const styles = {
     textAlign: 'center',
     border: 'none',
     margin: '10px',
-    width: '300px'
+    width: '250px'
   } as React.CSSProperties,
   title: {
-    fontSize: 32,
-    margin: '20px 0'
+    fontSize: 24,
+    margin: '10px 0 20px'
   } as React.CSSProperties,
   img: {
     width: '100%',
