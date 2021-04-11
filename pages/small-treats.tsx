@@ -38,13 +38,13 @@ const SmallTreats = () => {
             </Col>
           </Row>
 
-          <CenteredParagraph>6 cupcakes from £20</CenteredParagraph>
+          <CenteredParagraph>12 cupcakes from £35</CenteredParagraph>
           <CenteredParagraph>Based on Hestia's signature cake flavours</CenteredParagraph>
 
           <br />
 
           <CenteredParagraph>
-            For more elaborate or personalised decoration please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote.
+            For more elaborate, personalised decoration or larger orders, please get in touch via the <Anchor href='/contact'>contact</Anchor> page to receive a quote.
           </CenteredParagraph>
 
           <br />

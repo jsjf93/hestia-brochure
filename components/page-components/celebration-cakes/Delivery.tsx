@@ -6,6 +6,7 @@ import { Anchor, Paragraph, SubTitle } from "../shared/SharedComponents";
 const Wrapper = styled.div`
   background-color: ${secondary['alabaster']};
   padding: 40px 0;
+  text-align: center;
 `;
 
 export const Delivery = () => (

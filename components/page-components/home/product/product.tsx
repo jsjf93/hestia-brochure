@@ -18,16 +18,16 @@ const styles = {
   card: {
     textAlign: 'center',
     border: 'none',
-    margin: '10px',
-    width: '250px'
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
   } as React.CSSProperties,
   title: {
     fontSize: 24,
     margin: '10px 0 20px'
   } as React.CSSProperties,
   img: {
-    width: '100%',
-    maxHeight: '480px',
+    width: '90%',
     height: 'auto'
   } as React.CSSProperties,
 };

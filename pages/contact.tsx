@@ -48,6 +48,7 @@ const Contact = () => {
             <BoldParagraph>Please remember to include any information about allergy or dietary requirements (e.g. dairy, gluten, nuts).</BoldParagraph>
             <Paragraph>Please specify if you would like an order to be delivered or if you would like to collect it.</Paragraph>
             <Paragraph>If you would like an order to be delivered, please include a delivery address.</Paragraph>
+            <Paragraph>Please note, most products need at least 5 days notice, for celebration cakes, please book no later than two weeks in advance.</Paragraph>
           </StyledCol>
 
           <StyledCol md={7}>

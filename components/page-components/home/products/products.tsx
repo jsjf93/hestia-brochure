@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
-import { ProductData } from "../../../../common/interfaces";
+import { Col, Container, Row } from "react-bootstrap";
+import styled from "styled-components";
 import Product from '../product/product';
 
 const categories: { image: string, text: string }[] = [
@@ -29,26 +29,22 @@ const categories: { image: string, text: string }[] = [
   },
 ];
 
+const StyledContainer = styled(Container)`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
 export default function Products() {
   return (
-      <Container style={styles.productsContainer}>
-        {categories.map(item => (
-          <Product key={item.image} image={item.image} text={item.text} />
-        ))}
-      </Container>
+      <StyledContainer>
+        <Row>
+          {categories.map(item => (
+            <Col sm={4} key={item.image}>
+              <Product image={item.image} text={item.text} />
+            </Col>
+          ))}
+        </Row>
+      </StyledContainer>
   );
 }
-
-const styles = {
-  productsContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
-  } as React.CSSProperties,
-  buttonContainer: {
-    width: '100%',
-    textAlign: 'center',
-    fontSize: '32px',
-    padding: '20px 0 40px 0'
-  } as React.CSSProperties
-};

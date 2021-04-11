@@ -26,29 +26,17 @@ const AfternoonTea = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <h1>Afternoon Tea</h1>
+        <h1>Sweet Afternoon Tea</h1>
       </TitleWrapper>
 
-      <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" />
+      <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" disableMonth={true} />
 
       <TextWrapper>
         <BoxInfo />
         <StyledContainer>
           <Row>
             <Col sm={6}>
-              <Paragraph>2 x Sour Cherry and Almond Scones</Paragraph>
-            </Col>
-            <Col sm={6}>
               <Paragraph>2 x Banana Chocolate Macarons</Paragraph>
-            </Col>
-            <Col sm={6}>
-              <Paragraph>2 x Clotted Cream</Paragraph>
-            </Col>
-            <Col sm={6}>
-              <Paragraph>2 x Strawberry Jam</Paragraph>
-            </Col>
-            <Col sm={6}>
-              <Paragraph>2 x Peanut Butter Blondie, Raspberry Jelly, Chocolate Marshmallow Stack</Paragraph>
             </Col>
             <Col sm={6}>
               <Paragraph>2 x Whipped White Chocolate Ganache and Lemon Curd</Paragraph>
@@ -58,6 +46,12 @@ const AfternoonTea = () => {
             </Col>
             <Col sm={6}>
               <Paragraph>2 x Hibuscus Rhubard and Custard Financier</Paragraph>
+            </Col>
+            <Col sm={6}>
+              <Paragraph>2 x Sour Cherry and Almond Scones with clotted cream and strawberry jam</Paragraph>
+            </Col>
+            <Col sm={6}>
+              <Paragraph>2 x Peanut Butter Blondie, Raspberry Jelly, Chocolate Marshmallow Stack</Paragraph>
             </Col>
           </Row>
         </StyledContainer>

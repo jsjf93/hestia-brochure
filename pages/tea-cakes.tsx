@@ -12,6 +12,33 @@ const StyledCol = styled(Col)`
   font-family: 'Work Sans', sans-serif;
 `;
 
+const Wrapper = styled(DefaultWrapper)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const StyledContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Image = styled.img`
+  width: 70%;
+  margin: 0 auto;
+
+  @media (min-width: 992px) {
+    width: 50%;
+  };
+
+  @media (max-width: 500px) {
+    width: 100%;
+  };
+`;
+
 const TeaCakes = () => {
   return (
     <Layout>
@@ -19,16 +46,21 @@ const TeaCakes = () => {
         <h1>Tea Cakes</h1>
       </TitleWrapper>
 
-      <DefaultWrapper>
-        <Container>
+      <Wrapper>
+        <StyledContainer>
           <SubTitle>Smaller cakes based on Hestia's signature flavours</SubTitle>
+
+          <Image src="images/tea-cake.jpg" alt="Tea Cakes" />
+
+          <br />
+
           <CenteredParagraph>6" sponge (10 - 12 slices).</CenteredParagraph>
           <CenteredParagraph>Prices start from £20.</CenteredParagraph>
 
           <br />
 
           <CenteredParagraph>
-            For more elaborate or personalised decoration please get in touch via the <Anchor href='#'>contact</Anchor> page to receive a quote.
+            For more elaborate or personalised decoration please get in touch via the <Anchor href='/contact'>contact</Anchor> page to receive a quote.
           </CenteredParagraph>
 
           <br />
@@ -46,8 +78,8 @@ const TeaCakes = () => {
             <StyledCol sm={4}>&#9679; Walnut Mocha</StyledCol>
             <StyledCol sm={4}>&#9679; Banana Custard</StyledCol>
           </Row>
-        </Container>
-      </DefaultWrapper>
+        </StyledContainer>
+      </Wrapper>
     </Layout>
   );
 }

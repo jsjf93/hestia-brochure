@@ -6,6 +6,7 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 type Props = {
   title: string;
   image: string;
+  disableMonth: boolean;
 }
 
 const Wrapper = styled(DefaultWrapper)`
@@ -29,12 +30,16 @@ const Image = styled.img`
   };
 `;
 
-export const MonthlySelection = ({ title, image }: Props) => {
+export const MonthlySelection = ({ title, image, disableMonth }: Props) => {
   const month = months[new Date().getMonth()];
 
   return (
     <Wrapper>
-      <SubTitle>{`${month} ${title}`}</SubTitle>
+      {disableMonth ? (
+        <SubTitle>{`Selection available from 1st May`}</SubTitle>
+      ) : (
+        <SubTitle>{`${month} ${title}`}</SubTitle>
+      )}
 
       <Image src={image} alt={`${month} ${title}`} />
     </Wrapper>

@@ -6,6 +6,7 @@ import { Paragraph, SubTitle } from "../shared/SharedComponents";
 const Wrapper = styled.div`
   background-color: ${secondary['alabaster']};
   padding: 20px 0;
+  text-align: center;
 `;
 
 export const AllergyHelp = () => (
