@@ -32,7 +32,7 @@ const AfternoonTea = () => {
       <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" disableMonth={true} />
 
       <TextWrapper>
-        <BoxInfo />
+        <BoxInfo price="£25" />
         <StyledContainer>
           <Row>
             <Col sm={6}>

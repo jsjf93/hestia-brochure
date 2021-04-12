@@ -6,10 +6,14 @@ const TextWrapper = styled(AlabasterWrapper)`
   text-align: center;
 `;
 
-export const BoxInfo = () => (
+type Props = {
+  price: string;
+}
+
+export const BoxInfo = ({ price }: Props) => (
   <TextWrapper>
     <Paragraph>Each box contains two of each dessert.</Paragraph>
-    <Paragraph>£25</Paragraph>
+    <Paragraph>{price}</Paragraph>
     <Paragraph>Available for collection or local delivery every two weeks. Please enquire for dates.</Paragraph>
   </TextWrapper>
 );
