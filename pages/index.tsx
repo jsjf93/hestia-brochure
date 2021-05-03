@@ -5,7 +5,6 @@ import About from '../components/page-components/home/about-row/about';
 import Information from '../components/page-components/home/information-row/information';
 import Products from '../components/page-components/home/products/products';
 import { useWindowSize } from '../hooks/useWindowSize';
-import { getProductsData } from '../lib/products';
 
 export default function Home() {
   const size = useWindowSize();

@@ -1,33 +1,48 @@
 import { Card } from 'react-bootstrap';
+import styled from 'styled-components';
+import { Anchor } from '../../shared/SharedComponents';
+
+const StyledCard = styled(Card)`
+  text-align: center;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Img = styled.img`
+  width: 90%;
+  height: auto;
+`;
+
+const Title = styled(Card.Title)`
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  ${StyledCard}:hover & {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+`;
 
 type Props = {
   image: string;
   text: string;
+  link: string;
 }
 
 export default function Product(props: Props) {
   return (
-    <Card style={styles.card}>
-      <img src={props.image} alt={props.text} style={styles.img} />
-      <Card.Title style={styles.title}>{props.text}</Card.Title>
-    </Card>
+    <Anchor href={props.link}>
+      <StyledCard>
+        <Img src={props.image} alt={props.text} />
+        <Title>{props.text}</Title>
+      </StyledCard>
+    </Anchor>
   );
 }
-
-const styles = {
-  card: {
-    textAlign: 'center',
-    border: 'none',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  } as React.CSSProperties,
-  title: {
-    fontSize: 24,
-    margin: '10px 0 20px'
-  } as React.CSSProperties,
-  img: {
-    width: '90%',
-    height: 'auto'
-  } as React.CSSProperties,
-};
