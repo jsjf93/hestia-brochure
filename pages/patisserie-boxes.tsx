@@ -30,7 +30,7 @@ const Patisserie = () => {
         <h1>Patisserie</h1>
       </TitleWrapper>
 
-      <MonthlySelection title="Selection Box" image="images/petisserie.jpg" disableMonth={true} />
+      <MonthlySelection title="Selection Box" image="images/patisserie.jpg" disableMonth={true} />
 
       <TextWrapper>
         <BoxInfo price="£20" />
