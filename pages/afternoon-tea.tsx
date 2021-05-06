@@ -29,7 +29,7 @@ const AfternoonTea = () => {
         <h1>Sweet Afternoon Tea</h1>
       </TitleWrapper>
 
-      <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" disableMonth={true} />
+      <MonthlySelection title="Selection" image="images/afternoon-tea.JPG" disableMonth={false} />
 
       <TextWrapper>
         <BoxInfo price="£25" />

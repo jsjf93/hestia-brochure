@@ -14,6 +14,6 @@ export const BoxInfo = ({ price }: Props) => (
   <TextWrapper>
     <Paragraph>Each box contains two of each dessert.</Paragraph>
     <Paragraph>{price}</Paragraph>
-    <Paragraph>Available for collection or local delivery every two weeks. Please enquire for dates.</Paragraph>
+    <Paragraph>Available for collection or local delivery Tuesday to Saturday. Please enquire to book.</Paragraph>
   </TextWrapper>
 );
