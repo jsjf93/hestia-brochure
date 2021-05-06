@@ -33,7 +33,7 @@ const Contact = () => {
         <Row>
           <StyledCol md={5}>
             <h3>To order</h3>
-            <Paragraph>Email: <Anchor href="mailto:info@hestia-patisserie">info@hestia-patisserie</Anchor></Paragraph>
+            <Paragraph>Email: <Anchor href="mailto:info@hestia-patisserie.co.uk">info@hestia-patisserie.co.uk</Anchor></Paragraph>
             <Paragraph>
               Include information about products you are interesting in ordering from the following pages;&nbsp;
               <Anchor href="/celebration-cakes">Celebration Cakes</Anchor>,&nbsp;
