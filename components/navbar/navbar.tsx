@@ -37,7 +37,7 @@ export default function Navbar () {
           <a className={styles.navbar__link}>Tea Cakes</a>
         </Link>
         <Link href="/small-treats">
-          <a className={styles.navbar__link}>Cupcakes</a>
+          <a className={styles.navbar__link}>Small Treats</a>
         </Link>
         <Link href="/contact">
           <a className={styles.navbar__link}>Contact</a>

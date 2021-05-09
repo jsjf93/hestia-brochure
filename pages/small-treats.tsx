@@ -21,7 +21,7 @@ const SmallTreats = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <h1>Cupcakes</h1>
+        <h1>Small Treats</h1>
       </TitleWrapper>
 
       <DefaultWrapper>
