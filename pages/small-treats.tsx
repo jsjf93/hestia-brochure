@@ -65,7 +65,7 @@ const SmallTreats = () => {
             <StyledCol sm={4}>&#9679; Triple Chocolate</StyledCol>
             <StyledCol sm={4}>&#9679; Coconut Passionfruit</StyledCol>
             <StyledCol sm={4}>&#9679; Walnut Mocha</StyledCol>
-            <StyledCol sm={4}>&#9679; Banana Custard</StyledCol>
+            <StyledCol sm={{ span: 4, offset: 4 }}>&#9679; Banana Custard</StyledCol>
           </Row>
         </Container>
       </DefaultWrapper>
