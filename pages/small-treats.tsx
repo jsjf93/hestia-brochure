@@ -95,15 +95,21 @@ const SmallTreats = () => {
             <Row>
               <Col md={4}>
                 <Image src="images/pbj-blondie.jpg" alt="PBJ Blondie" />
-                <CenteredParagraph>Peanut Butter marshmallow fluff between two layers of brown butter blondie with raspberry pate de fruit and salted peanuts</CenteredParagraph>
+                <Spacing>
+                  <CenteredParagraph>Peanut Butter marshmallow fluff between two layers of brown butter blondie with raspberry pate de fruit and salted peanuts</CenteredParagraph>
+                </Spacing>
               </Col>
               <Col md={4}>
                 <Image src="images/salted-caramel-brownie.jpg" alt="Salted Caramel Brownie" />
-                <CenteredParagraph>Salted caramel marshmallow fluff between two layers of chocolate brownie with salted caramel sauce and chocolate chips</CenteredParagraph>
+                <Spacing>
+                  <CenteredParagraph>Salted caramel marshmallow fluff between two layers of chocolate brownie with salted caramel sauce and chocolate chips</CenteredParagraph>
+                </Spacing>
               </Col>
               <Col md={4}>
                 <Image src="images/blondie-marshmallow.jpg" alt="Blondies" />
-                <CenteredParagraph>Rhubarb marshmallow fluff and vanilla custard between two layers of custard blondie</CenteredParagraph>
+                <Spacing>
+                  <CenteredParagraph>Rhubarb marshmallow fluff and vanilla custard between two layers of custard blondie</CenteredParagraph>
+                </Spacing>
               </Col>
             </Row>
           </Spacing>
