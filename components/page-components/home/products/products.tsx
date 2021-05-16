@@ -30,7 +30,7 @@ const categories: { image: string, text: string, link: string }[] = [
   },
   {
     image: '/images/SquareCupcake.jpg',
-    text: 'Cupcakes',
+    text: 'Small Treats',
     link: '/small-treats',
   },
 ];
