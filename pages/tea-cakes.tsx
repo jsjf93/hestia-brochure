@@ -54,8 +54,8 @@ const TeaCakes = () => {
 
           <br />
 
-          <CenteredParagraph>6" sponge (10 - 12 slices).</CenteredParagraph>
-          <CenteredParagraph>Prices start from £20.</CenteredParagraph>
+          <CenteredParagraph>6" sponge (10 - 12 slices). Prices start from £25.</CenteredParagraph>
+          <CenteredParagraph>8" sponge (12 - 16 slices). Prices start from £35.</CenteredParagraph>
 
           <br />
 

@@ -17,6 +17,18 @@ const Image = styled.img`
   padding-bottom: 20px;
 `;
 
+const Subtitle = styled.h2`
+  text-align: center;
+`;
+
+const Hr = styled.hr`
+  margin: 2rem;
+`;
+
+const Spacing = styled.div`
+  margin: 0 0 20px 0;
+`;
+
 const SmallTreats = () => {
   return (
     <Layout>
@@ -25,7 +37,9 @@ const SmallTreats = () => {
       </TitleWrapper>
 
       <DefaultWrapper>
+
         <Container>
+          <Subtitle>Cupcakes</Subtitle>
           <Row>
             <Col md={4}>
               <Image src="images/Cupcakes1.jpg" alt="Cupcakes" />
@@ -67,6 +81,35 @@ const SmallTreats = () => {
             <StyledCol sm={4}>&#9679; Walnut Mocha</StyledCol>
             <StyledCol sm={{ span: 4, offset: 4 }}>&#9679; Banana Custard</StyledCol>
           </Row>
+
+          <Hr />
+
+          <Subtitle>Marshmallow Brownies and Blondies</Subtitle>
+
+          <Spacing>
+            <CenteredParagraph>A layer of marshmallow fluff sandwiched between two layers of brownie or blondie, what's not to love?!</CenteredParagraph>
+            <CenteredParagraph>Available gluten free upon request.</CenteredParagraph>
+          </Spacing>
+
+          <Spacing>
+            <Row>
+              <Col md={4}>
+                <Image src="images/pbj-blondie.jpg" alt="PBJ Blondie" />
+                <CenteredParagraph>Peanut Butter marshmallow fluff between two layers of brown butter blondie with raspberry pate de fruit and salted peanuts</CenteredParagraph>
+              </Col>
+              <Col md={4}>
+                <Image src="images/salted-caramel-brownie.jpg" alt="Salted Caramel Brownie" />
+                <CenteredParagraph>Salted caramel marshmallow fluff between two layers of chocolate brownie with salted caramel sauce and chocolate chips</CenteredParagraph>
+              </Col>
+              <Col md={4}>
+                <Image src="images/blondie-marshmallow.jpg" alt="Blondies" />
+                <CenteredParagraph>Rhubarb marshmallow fluff and vanilla custard between two layers of custard blondie</CenteredParagraph>
+              </Col>
+            </Row>
+          </Spacing>
+
+          <CenteredParagraph>All are £15 for a box of 6.</CenteredParagraph>
+
         </Container>
       </DefaultWrapper>
     </Layout>
