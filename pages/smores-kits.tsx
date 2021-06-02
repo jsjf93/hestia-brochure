@@ -13,7 +13,7 @@ const kits = [
   },
   {
     image: 'images/VanillaMarshmallowSqr.jpg',
-    text: ['8 x Vanilla Bean Marshmallows', 'Graham Crackers', '100g Dark Chocolate Shards', '2 x Tea lights', '8 x Wooden Skewers'],
+    text: ['8 x Vanilla Bean Marshmallows', 'Graham Crackers', '100g Dark Chocolate Shards'],
     alt: 'Vanilla Bean Marshmallow Kit',
     price: '£15',
   },
