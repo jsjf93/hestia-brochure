@@ -23,19 +23,19 @@ export const Cakes = () => (
     <Container>
       <Row>
         <PaddedCol md={4}>
-          <h3>Salted Caramel Hazelnut</h3>
+          <h3>Chocolate Pecan</h3>
           <Line />
-          <Paragraph>Hazelnut mousseline, milk chocolate mousse, hazelnut dacquoise, salted caramel centre</Paragraph>
+          <Paragraph>Brown Sugar Crumble, Pecan Praline, Chocolate Joconde, Dark Chocolate Mousse, Chocolate Ganache</Paragraph>
         </PaddedCol>
         <PaddedCol md={4}>
-          <h3>Passionfruit Coconut Tart</h3>
+          <h3>Mango Almond</h3>
           <Line />
-          <Paragraph>Passionfruit pate de fruit, coconut mousse, mango gel, toasted coconut</Paragraph>
+          <Paragraph>Almond Dacquoise, White Chocolate Bavarian Mousse, Mango Compote, Mango Mirror Glaze</Paragraph>
         </PaddedCol>
         <PaddedCol md={4}>
-          <h3>Carrot Opera</h3>
+          <h3>St Honore</h3>
           <Line />
-          <Paragraph>Spiced carrot sponge, layers of lime and cream cheese creme de beurre</Paragraph>
+          <Paragraph>Vanilla Caramel, Creme Chilboust, Freeze Dried Raspberries</Paragraph>
         </PaddedCol>
       </Row>
     </Container>

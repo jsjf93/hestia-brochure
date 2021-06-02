@@ -6,21 +6,21 @@ import { SmoresKit } from '../components/page-components/smores-kits/SmoresKit';
 
 const kits = [
   {
+    image: 'images/ChocolateMarshmallowSqr.jpg',
+    text: ['8 x Chocolate Marshmallows', 'Graham Crackers', 'Milk Chocolate Shards'],
+    alt: 'Chocolate Marshmallow Kit',
+    price: '£15',
+  },
+  {
     image: 'images/VanillaMarshmallowSqr.jpg',
-    text: ['8 x Vanilla Bean Marshmallow', '16 x Graham Crackers', '100g Dark Chocolate Ganache', '2 x Tea lights', '8 x Wooden Skewers'],
+    text: ['8 x Vanilla Bean Marshmallows', 'Graham Crackers', '100g Dark Chocolate Shards', '2 x Tea lights', '8 x Wooden Skewers'],
     alt: 'Vanilla Bean Marshmallow Kit',
     price: '£15',
   },
   {
-    image: 'images/MixedMarshmallowSqr.jpg',
-    text: ['4 x Vanilla Bean Marshmallow', '4 x Strawberry and Basil Marshmallow', '16 x Graham Crackers', '100g Dark Chocolate Ganache', '100g Salt and Pepper Ganache', '2 x Tea lights', '8 x Wooden Skewers'],
-    alt: 'Vanilla Bean Marshmallow Kit',
-    price: '£20',
-  },
-  {
-    image: 'images/StrawberryMarshmallowSqr.jpg',
-    text: ['8 x Strawberry and Basil Marshmallow', '16 x Graham Crackers', '100g Salt and Pepper Chocolate Ganache', '2 x Tea lights', '8 x Wooden Skewers'],
-    alt: 'Vanilla Bean Marshmallow Kit',
+    image: 'images/RaspberryMarshmallowSqr.jpg',
+    text: ['8 x Raspberry and Champagne Marshmallows', 'Graham Crackers', 'White Chocolate Shards'],
+    alt: 'Raspberry Marshmallow Kit',
     price: '£16',
   },
 ]

@@ -36,22 +36,28 @@ const AfternoonTea = () => {
         <StyledContainer>
           <Row>
             <Col sm={6}>
-              <Paragraph>2 x Banana Chocolate Macarons</Paragraph>
+              <Paragraph>2 x Lemon and Blueberry Scones</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Whipped White Chocolate Ganache and Lemon Curd</Paragraph>
+              <Paragraph>2 x Tiptree Lemon Curd</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Clipper English Breakfast Tea Bags</Paragraph>
+              <Paragraph>2 x Clotted Cream</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Hibuscus Rhubard and Custard Financier</Paragraph>
+              <Paragraph>2 x Semi Frozen Peanut Butter and Banana Cheesecake</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Sour Cherry and Almond Scones with clotted cream and strawberry jam</Paragraph>
+              <Paragraph>2 x Caramel Latte Macarons</Paragraph>
             </Col>
             <Col sm={6}>
-              <Paragraph>2 x Peanut Butter Blondie, Raspberry Jelly, Chocolate Marshmallow Stack</Paragraph>
+              <Paragraph>2 x Lime and Coconut Tartlets</Paragraph>
+            </Col>
+            <Col sm={6}>
+              <Paragraph>2 x Mini Victoria Sponges</Paragraph>
+            </Col>
+            <Col sm={6}>
+              <Paragraph>2 x English Breakfast Clipper Tea Bags</Paragraph>
             </Col>
           </Row>
         </StyledContainer>

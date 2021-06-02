@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin-bottom: 40px;
   align-items: center;
+  text-align: center;
 `;
 
 const Image = styled.img`
