@@ -18,24 +18,28 @@ const Line = styled.hr`
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 `;
 
+const H3 = styled.h3`
+  min-height: 66px;
+`;
+
 export const Cakes = () => (
   <CakesWrapper>
     <Container>
       <Row>
         <PaddedCol md={4}>
-          <h3>Chocolate Pecan</h3>
+          <H3>Honey Chamomile</H3>
           <Line />
-          <Paragraph>Brown Sugar Crumble, Pecan Praline, Chocolate Joconde, Dark Chocolate Mousse, Chocolate Ganache</Paragraph>
+          <Paragraph>Honey and Chamomile Sponge, Pear Cremeux, Honey Mousse, Honey Glaze</Paragraph>
         </PaddedCol>
         <PaddedCol md={4}>
-          <h3>Mango Almond</h3>
+          <H3>Salted Caramel Peanut Tart</H3>
           <Line />
-          <Paragraph>Almond Dacquoise, White Chocolate Bavarian Mousse, Mango Compote, Mango Mirror Glaze</Paragraph>
+          <Paragraph>Peanut Mousseline, Salted Caramel Creme Diplomat, Salted Caramel</Paragraph>
         </PaddedCol>
         <PaddedCol md={4}>
-          <h3>St Honore</h3>
+          <H3>Black Forest</H3>
           <Line />
-          <Paragraph>Vanilla Caramel, Creme Chilboust, Freeze Dried Raspberries</Paragraph>
+          <Paragraph>Chocolate Guinness Sponge, Black Cherry Cremeux, Mascapone Creme Patisserie, Cherry Glaze</Paragraph>
         </PaddedCol>
       </Row>
     </Container>
